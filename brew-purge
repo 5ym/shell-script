@@ -1,5 +1,0 @@
-#!/bin/sh
-
-# brewでパッケージのみではなく関連ファイルも削除する
-# ./brew-purge.sh 削除したいパッケージ名
-sudo find /usr/local | grep $1 | grep -v Fomula | xargs rm -rf
